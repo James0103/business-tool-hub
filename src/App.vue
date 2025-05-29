@@ -6,8 +6,8 @@ import QrGenerator from './components/QrGenerator.vue'
 export default {
   name: 'App',
   components: {
-    PriceTracker,
-    QrGenerator
+    'price-tracker': PriceTracker,
+    'qr-generator': QrGenerator
   },
   setup() {
     const selectedTool = ref(null)
@@ -113,7 +113,7 @@ export default {
   </div>
 </template>
 
-<style scoped>
+<style>
 * {
   margin: 0;
   padding: 0;
